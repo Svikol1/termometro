@@ -2,6 +2,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showString("" + (input.temperature()))
     Temperatura = input.temperature()
     Delta_T = Temperatura - Temperatura_precedente
+    Temperatura_precedente = Temperatura
 })
 input.onButtonPressed(Button.B, function () {
     basic.showString("" + (Delta_T))
